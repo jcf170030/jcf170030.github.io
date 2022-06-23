@@ -1,0 +1,186 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 100%;
+}
+
+/*video test*/
+
+/* Style the video: 100% width and height to cover the entire window 
+#bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  */
+p {
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    font-size: .5rem;
+    font-weight: Bold;
+    line-height: 1.1rem;
+    letter-spacing: .9rem;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    font-size: 9rem;
+    font-weight: Bold;
+    line-height: 4.5rem;
+    letter-spacing: -12px;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: Bold;
+    line-height: 1.1rem;
+    letter-spacing: -1.75px;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    font-size: 1rem;
+    font-weight: Bold;
+    line-height: 1.1rem;
+    letter-spacing: -1px;
+}
+
+h4 {
+    font-family: itc-avant-garde-gothic-pro, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #333;
+    font-size: 5rem;
+    line-height: 4rem;
+    letter-spacing: -6px;
+} 
+
+h5 {
+  font-family: Helvetica, sans-serif;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: Bold;
+  line-height: .9em;
+  letter-spacing: -1px;
+}
+
+
+a { 
+    white-space: nowrap;
+    color: #333;
+    text-decoration: none;  
+}
+
+/* for grid test */
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 100px 100px 100px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 200px 300px;
+  padding-left:5%;
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav "
+    "main main spacer2 contact content3 content3 content3 content3"
+    "spacer sidebar sidebar sidebar content3 content3 content3 content3"
+    "spacer sidebar sidebar sidebar footer footer footer footer";
+  
+  font-family: Helvetica, sans-serif;
+  grid-gap: 0.75rem;
+  font-weight: 800;
+  font-size: .75rem;
+  color: #333;
+  text-align: Left;
+  line-height: .9em;
+  letter-spacing: -1px;
+}
+
+.nav {
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.main {
+  grid-area: main;
+  /*padding-top: 10%;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 50%;*/
+}
+
+#sidebar {
+  white-space: pre-line;
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#spacer {
+  grid-area: spacer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#spacer2 {
+  grid-area: spacer2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#contact {
+  grid-area: contact;
+  white-space: pre-line;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#menuoptions {
+  grid-area: contact;
+  white-space: pre-line;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  text-align: right;
+}
+
+#content1 {
+  grid-area: content1;
+  white-space: pre-line;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content2 {
+  grid-area: content2;
+  white-space: pre-line;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content3 {
+  white-space: pre-line;
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+footer {
+  background: #1de9b6;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
